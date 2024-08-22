@@ -3,10 +3,11 @@ import TelegramBot from "node-telegram-bot-api";
 
 
 // const bot = new Telegraf("6985905665:AAG3s5jrmX86tP9NCnLtEeyaKX6mGbE-ANw")
-const bot_new = new TelegramBot("6985905665:AAG3s5jrmX86tP9NCnLtEeyaKX6mGbE-ANw", { polling: true });
+const bot_new = new TelegramBot("7469552490:AAE4iB9dqsRGot_gRzThQJzZzww3lcw4zlI", { polling: true });
 
 
-const web_link = "https://main.d2blj32f829es0.amplifyapp.com/"
+// const web_link = "https://main.d2blj32f829es0.amplifyapp.com/"
+const web_link = "https://localhost:5173/"
 
 // bot.start(async(ctx) => {
 //     console.log("ctx", ctx)
@@ -42,7 +43,7 @@ bot_new.onText(/\/start/, async(msg) => {
         inline_keyboard: [
           [
             {
-              text: 'Open OctaClick',
+              text: 'Open testbot',
              web_app:{
                url: web_link
              }
